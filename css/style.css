@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Estilo del Header*/
+h1{
+  text-align: center;
+  font-size: 70px
+}
+
+/*Estilo Body*/
+
+body{
+	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+	font-family: 'Lora', serif;
+	color: #292929;
+}
+
+/*Estilos del Menu de Navegacion*/
+
+.encabezado__menu{
+	background-color: #f0b7ed;
+}
+
+.encabezado__menu ul {
+    text-align: center;
+  }
+
+.encabezado__menu ul li {
+list-style: none;
+padding: 1rem;
+display: inline-block;
+}
+
+li a{
+color: #292929;
+text-decoration: none;
+}
+
+a:hover{
+	font-size: 1.3rem;
+	background-color: rgb(245, 173, 223);
+	
+}
+
+
+/*Estilo Cuerpo Principal*/
+	main{
+		padding: 0 20px;	
+	}
+
+	/*Estilo de Productos*/
+	.contenedor{
+		margin: 10px;
+	}
+
+	.contenedor__productos{
+		display: grid; 
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: 1fr 1fr 1fr; 
+		gap: 0px 0px; 
+		align-items: center;
+		
+	}
+
+    .producto {
+	border: 1px;
+	padding: 20px;
+	align-items: center;
+  	}
+
+
+  .producto img{
+	margin: 10px;
+    border: 3px solid rgb(182, 169, 169);
+	width: 200px;
+	height: 200px;
+  }
+
+  .producto img:hover{
+	  transform: scale(1.1);
+	  
+  }
+
+  .producto h3{
+	text-align: center;
+	font-size: 0.5 rem;
+	text-align: center;
+  }
+
+
+  .producto__precio {
+	color: #FF4E00;
+  }
+	
+  .producto div i{
+	  text-align: center;
+  }
+
+
+	/*Estilos Pie de Pagina*/
+
+	h4{
+		color: #292929;
+		font: 1em;
+	} 
+
+	.footer{
+		display: grid;
+		grid-template-areas: 
+		"contacto redes"
+		"none copryght";
+		background-color: #dab7f0;
+		margin: 20px;
+		padding: 30px;
+	}
+
+	.footer__datos{
+		grid-area: contacto;
+		text-align: center;
+		color: #292929;
+		font: 1rem;
+
+	}
+
+	.footer__redes{
+		grid-area: redes;
+		color: #292929;
+	}
+
+	.fab:hover{
+		transform: scale(1.5);
+	}
+
+	.footer__copyright{
+		grid-area: copyright;
+		padding: 10px;
+
+	}
+
+	/*Estilo pagina Nuevos*/
+
+	.nuevos__productos{
+		display: grid;
+		grid-column-gap: 10px;
+		margin: 20px;
+		padding: 30px;
+		grid-template-rows: 1fr 1fr 1fr; 
+		border: 1px solid rgb(243, 234, 234);
+		
+	}
+		
+	.nuevo__descripcion{
+		display: flex;
+		margin: 10px;
+		padding: 10px;
+
+
+	}	
+	
+	.nuevo__descripcion img{		
+		width: 300px;
+		height: 300px;
+	}
+
+	.resumen p{
+		text-align: justify;
+		color: #292929;
+		font: 1.5em ;
+		font: bold;
+		line-height: 1.5;
+		color: black;
+		padding-left: 20px;
+	}
+
+	.resumen h3{
+		font-size: 20px;
+	}
+
+	/*Estilo Preguntas*/
+
+.contenedor__preguntas{
+    margin: 20px;
+    padding: 20px;
+	}
+
+.preguntas{
+	margin: 20px;
+	display: flex;
+	line-height: 1.5;
+	flex-direction: column;	
+}
+
+.titulo{
+	color: rgb(54, 18, 54);
+	font-size: 1.5 rem;
+
+}
+
+.titulo ol li{
+	text-align: justify;
+	list-style: none;
+	
+}
+
