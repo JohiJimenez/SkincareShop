@@ -65,8 +65,10 @@ a:hover{
 	}
 
     .producto {
+	display: flex;
 	border: 1px;
 	padding: 20px;
+	flex-direction: column;
 	align-items: center;
   	}
 
@@ -204,3 +206,10 @@ a:hover{
 	
 }
 
+/*Formulario Contacto*/
+
+.formulario{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
