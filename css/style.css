@@ -1,27 +1,26 @@
 * {
 	margin: 0;
 	padding: 0;
-}
-
-/*Estilo del Header*/
-h1{
-  text-align: center;
-  font-size: 70px
+	font-family: 'Lora', serif;
+	font-size: 1rem;
 }
 
 /*Estilo Body*/
 
 body{
 	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-	font-family: 'Lora', serif;
 	color: #292929;
+}
+
+/*Estilo del Header*/
+h1{
+  text-align: center;
+  font-size: 4rem;
 }
 
 /*Estilos del Menu de Navegacion*/
 
-.encabezado__menu{
-	background-color: #f0b7ed;
-}
+
 
 .encabezado__menu ul {
     text-align: center;
@@ -31,7 +30,9 @@ body{
 list-style: none;
 padding: 1rem;
 display: inline-block;
+
 }
+
 
 li a{
 color: #292929;
@@ -39,25 +40,34 @@ text-decoration: none;
 }
 
 a:hover{
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	background-color: rgb(245, 173, 223);
-	
+	text-decoration: none;
+	border-radius: 0.4rem;
+	color: #292929;
 }
 
+i{
+	font-size: 2rem;
+    margin: 0.5rem;
+}
 
 /*Estilo Cuerpo Principal*/
 	main{
-		padding: 0 20px;	
+		padding: 0 1.1rem;	
 	}
 
 	/*Estilo de Productos*/
+	h3{
+		font-size: 1rem;
+	}
 	.contenedor{
-		margin: 10px;
+		margin: 1rem;
 	}
 
 	.contenedor__productos{
 		display: grid; 
-		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-columns: 1fr 1fr 1fr 1fr ; 
 		grid-template-rows: 1fr 1fr 1fr; 
 		gap: 0px 0px; 
 		align-items: center;
@@ -67,7 +77,7 @@ a:hover{
     .producto {
 	display: flex;
 	border: 1px;
-	padding: 20px;
+	padding: 1.5rem;
 	flex-direction: column;
 	align-items: center;
   	}
@@ -75,9 +85,9 @@ a:hover{
 
   .producto img{
 	margin: 10px;
-    border: 3px solid rgb(182, 169, 169);
-	width: 200px;
-	height: 200px;
+    border-color: blueviolet;
+	width: 15rem;
+	height: 15rem;
   }
 
   .producto img:hover{
@@ -88,7 +98,7 @@ a:hover{
   .producto h3{
 	text-align: center;
 	font-size: 0.5 rem;
-	text-align: center;
+	font-weight: bold ;
   }
 
 
@@ -96,63 +106,55 @@ a:hover{
 	color: #FF4E00;
   }
 	
-  .producto div i{
+  .producto i{
 	  text-align: center;
+	  color: rgb(168, 127, 159);
+	  
   }
 
 
 	/*Estilos Pie de Pagina*/
 
-	h4{
-		color: #292929;
-		font: 1em;
-	} 
-
 	.footer{
-		display: grid;
-		grid-template-areas: 
-		"contacto redes"
-		"none copryght";
+		display: flex;
 		background-color: #dab7f0;
-		margin: 20px;
-		padding: 30px;
+		margin: 10px;
+		padding: 10px;
+	
 	}
 
 	.footer__datos{
-		grid-area: contacto;
-		text-align: center;
 		color: #292929;
 		font: 1rem;
+		display: inline;
 
 	}
 
 	.footer__redes{
-		grid-area: redes;
 		color: #292929;
+		text-align: star;
 	}
 
 	.fab:hover{
 		transform: scale(1.5);
 	}
 
-	.footer__copyright{
-		grid-area: copyright;
-		padding: 10px;
+	.footer__copyright h4{
+		font-size: 1rem;
+		color: #292929;
+		} 
 
-	}
 
 	/*Estilo pagina Nuevos*/
 
-	.nuevos__productos{
-		display: grid;
-		grid-column-gap: 10px;
-		margin: 20px;
-		padding: 30px;
-		grid-template-rows: 1fr 1fr 1fr; 
-		border: 1px solid rgb(243, 234, 234);
-		
+	.card{
+		margin: 2rem;
 	}
-		
+	
+	.card-img-top{
+		width: 100%;
+	}
+
 	.nuevo__descripcion{
 		display: flex;
 		margin: 10px;
@@ -180,36 +182,41 @@ a:hover{
 		font-size: 20px;
 	}
 
-	/*Estilo Preguntas*/
-
-.contenedor__preguntas{
-    margin: 20px;
-    padding: 20px;
+	a.btn{
+	background-color: rgb(245, 173, 223);
+	font-size: 1.2rem;
+	border-radius: rgb(83, 25, 61);
+	color: brown;
 	}
 
-.preguntas{
-	margin: 20px;
-	display: flex;
-	line-height: 1.5;
-	flex-direction: column;	
-}
+	/*Estilo Preguntas*/
 
-.titulo{
-	color: rgb(54, 18, 54);
-	font-size: 1.5 rem;
+	.contenedor__preguntas{
+		margin: 20px;
+		padding: 20px;
+		}
 
-}
+	.preguntas{
+		margin: 20px;
+		display: flex;
+		line-height: 1.5;
+		flex-direction: column;	
+	}
 
-.titulo ol li{
-	text-align: justify;
-	list-style: none;
-	
-}
+	.titulo{
+		color: rgb(54, 18, 54);
+		font-size: 1.5 rem;
 
-/*Formulario Contacto*/
+	}
 
-.formulario{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
+	.titulo ol li{
+		text-align: justify;
+		list-style: none;
+		
+	}
+
+	/*Formulario Contacto*/
+
+	.formulario{
+		text-align: center;
+	}
