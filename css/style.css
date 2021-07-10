@@ -33,7 +33,6 @@ display: inline-block;
 
 }
 
-
 li a{
 color: #292929;
 text-decoration: none;
@@ -218,5 +217,19 @@ i{
 	/*Formulario Contacto*/
 
 	.formulario{
+		display: flex;
+		margin: 1.5rem;
+		padding: 1.5rem;
+		border-color: rgb(111, 15, 201);
+		justify-content: center;
 		text-align: center;
 	}
+
+	form {
+		position: relative;	  
+		width  : 740px;
+		height : 498px;
+		margin : 0 auto;
+	  }
+	  
+	  
