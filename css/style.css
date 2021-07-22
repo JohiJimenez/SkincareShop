@@ -20,8 +20,6 @@ h1{
 
 /*Estilos del Menu de Navegacion*/
 
-
-
 .encabezado__menu ul {
     text-align: center;
   }
@@ -57,91 +55,64 @@ i{
 	}
 
 	/*Estilo de Productos*/
-	h3{
-		font-size: 1rem;
-	}
-	.contenedor{
+	
+	.container{
 		margin: 1rem;
 	}
 
-	.contenedor__productos{
-		display: grid; 
-		grid-template-columns: 1fr 1fr 1fr 1fr ; 
-		grid-template-rows: 1fr 1fr 1fr; 
-		gap: 0px 0px; 
-		align-items: center;
+	.producto img{
+		margin: 10px;
+		border-color: blueviolet;
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.producto img:hover{
+		transform: scale(1.1);
 		
 	}
 
-    .producto {
-	display: flex;
-	border: 1px;
-	padding: 1.5rem;
-	flex-direction: column;
-	align-items: center;
-  	}
+	h3.producto__titulo{
+		text-align: center;
+		font-size: 1rem;
+		font-style: italic;
+	}
+		
+	.producto.items{
+		align-items: center;
+		size: 0.25rem;
+	}
 
-
-  .producto img{
-	margin: 10px;
-    border-color: blueviolet;
-	width: 15rem;
-	height: 15rem;
-  }
-
-  .producto img:hover{
-	  transform: scale(1.1);
 	  
-  }
+	span.producto__precio {
+		color: #FF4E00;
+		text-align: auto;
+	}
 
-  .producto h3{
-	text-align: center;
-	font-size: 0.5 rem;
-	font-weight: bold ;
-  }
-
-
-  .producto__precio {
-	color: #FF4E00;
-  }
-	
-  .producto i{
-	  text-align: center;
-	  color: rgb(168, 127, 159);
-	  
-  }
+	.producto__icon{
+		display: flex;
+		color: rgb(102, 48, 88);
+		size: 0.1 rem;
+		justify-content: center;
+	}
 
 
 	/*Estilos Pie de Pagina*/
 
 	.footer{
-		display: flex;
 		background-color: #dab7f0;
-		margin: 10px;
-		padding: 10px;
+		margin: 0.5 rem;
+		padding: 0.5 rem;
 	
-	}
-
-	.footer__datos{
-		color: #292929;
-		font: 1rem;
-		display: inline;
-
-	}
-
-	.footer__redes{
-		color: #292929;
-		text-align: star;
 	}
 
 	.fab:hover{
 		transform: scale(1.5);
 	}
 
-	.footer__copyright h4{
-		font-size: 1rem;
-		color: #292929;
-		} 
+	div.p-2{
+		align-self: center;
+	}
 
 
 	/*Estilo pagina Nuevos*/
@@ -232,4 +203,10 @@ i{
 		margin : 0 auto;
 	  }
 	  
-	  
+
+	  .carousel img{
+		object-fit: cover;
+	    object-position: center;
+	    height: 70vh;
+	  }
+	
