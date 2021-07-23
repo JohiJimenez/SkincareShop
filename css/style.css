@@ -114,7 +114,11 @@ i{
 		align-self: center;
 	}
 
+	div.p-2 h4{
+		font-size: 1rem;
+	}
 
+	
 	/*Estilo pagina Nuevos*/
 
 	.card{
@@ -125,36 +129,14 @@ i{
 		width: 100%;
 	}
 
-	.nuevo__descripcion{
-		display: flex;
-		margin: 10px;
-		padding: 10px;
-
-
-	}	
-	
-	.nuevo__descripcion img{		
-		width: 300px;
-		height: 300px;
-	}
-
-	.resumen p{
-		text-align: justify;
-		color: #292929;
-		font: 1.5em ;
-		font: bold;
-		line-height: 1.5;
-		color: black;
-		padding-left: 20px;
-	}
-
-	.resumen h3{
-		font-size: 20px;
+	.btn-primary:hover{
+		background-color: rgb(247, 151, 218);
+		color: blue;
 	}
 
 	a.btn{
 	background-color: rgb(245, 173, 223);
-	font-size: 1.2rem;
+	font-size: 1rem;
 	border-radius: rgb(83, 25, 61);
 	color: brown;
 	}
