@@ -42,13 +42,20 @@ a:hover{
 	text-decoration: none;
 	border-radius: 0.4rem;
 	color: #292929;
+<<<<<<< HEAD
+}
+
+i{
+	font-size: 2rem;
+    margin: 0.5rem;
+=======
+>>>>>>> f7c9bfa90c72d8e8272ef8edf00f8b4fcbe124d7
 }
 
 i{
 	font-size: 2rem;
     margin: 0.5rem;
 }
-
 
 /*Estilo Cuerpo Principal*/
 	main{
@@ -58,9 +65,13 @@ i{
 	/*Estilo de Productos*/
 	
 	.container{
+<<<<<<< HEAD
 		display: flex;
 		align-items: center;
 		justify-content: center;
+=======
+		margin: 1rem;
+>>>>>>> f7c9bfa90c72d8e8272ef8edf00f8b4fcbe124d7
 	}
 
 	.producto img{
@@ -121,10 +132,13 @@ i{
 		font-size: 1rem;
 	}
 
+<<<<<<< HEAD
 	/*Carrusel*/
 	.carousel {
 		margin:auto;
 	}
+=======
+>>>>>>> f7c9bfa90c72d8e8272ef8edf00f8b4fcbe124d7
 	
 	/*Estilo pagina Nuevos*/
 
@@ -156,6 +170,14 @@ i{
 		padding: 20px;
 		}
 
+<<<<<<< HEAD
+=======
+	.contenedor__preguntas{
+		margin: 20px;
+		padding: 20px;
+		}
+
+>>>>>>> f7c9bfa90c72d8e8272ef8edf00f8b4fcbe124d7
 	.preguntas{
 		margin: 20px;
 		display: flex;
