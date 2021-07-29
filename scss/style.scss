@@ -1,0 +1,99 @@
+
+ //variables//
+ $size: 1rem;
+ $color: #292929;
+
+ //Mixins//
+ @mixin box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ * {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lora', serif;
+	font-size: size;
+    list-style:none 
+ }
+
+ /*Estilo Body*/
+
+ body{
+	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+	color: $color;
+}
+
+/*Estilo del Header*/
+h1{
+    text-align: center;
+    font-size: $size*4;
+  }
+  
+  /*Estilos del Menu de Navegacion*/
+
+  .encabezado__menu{
+      ul{
+        li {
+          a {
+            &:hover {
+                font-size: $size;
+                background-color: rgb(245, 173, 223);
+                border-radius: $size/2;
+                color: $color;
+            }
+         }          
+        }
+    }   
+  }  
+
+i{
+    font-size: $size*2;
+    margin: 0.5rem;
+}
+
+/*Estilo Cuerpo Principal*/
+main{
+    padding: 0 1.1rem;	
+}
+
+  
+
+/*Estilo de Productos*/
+	
+	.container{
+		margin: 1rem;
+            .producto img{
+                margin: 10px;
+                border-color: blueviolet;
+                width: 15rem;
+                height: 15rem;
+                &:hover{
+                    transform: scale(1.1); 
+                }
+             }
+             .producto__icon{
+                display: flex;
+                color: rgb(102, 48, 88);
+                size: 0.1 rem;
+                justify-content: center;
+            }
+            h3.producto__titulo{
+                text-align: center;
+                font-size: 1rem;
+                font-style: italic;
+            }
+            span.producto__precio {
+                color: #FF4E00;
+                text-align: auto;
+            }
+     }
+                         
+            
+           
+
+	 
+ 		 
+
+
