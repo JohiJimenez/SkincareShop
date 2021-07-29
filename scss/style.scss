@@ -58,17 +58,16 @@ main{
     padding: 0 1.1rem;	
 }
 
-  
-
 /*Estilo de Productos*/
 	
 	.container{
-		margin: 1rem;
+        display: flex;
+        align-items: center;
             .producto img{
                 margin: 10px;
                 border-color: blueviolet;
-                width: 15rem;
-                height: 15rem;
+                width: $size*15;
+                height: $size*15;
                 &:hover{
                     transform: scale(1.1); 
                 }
@@ -77,11 +76,10 @@ main{
                 display: flex;
                 color: rgb(102, 48, 88);
                 size: 0.1 rem;
-                justify-content: center;
             }
             h3.producto__titulo{
                 text-align: center;
-                font-size: 1rem;
+                font-size: $size;
                 font-style: italic;
             }
             span.producto__precio {
@@ -90,6 +88,91 @@ main{
             }
      }
                          
+        	/*Estilos Pie de Pagina*/
+            .footer {
+                background-color: #dab7f0;
+                margin: 0.5 rem;
+                padding: 0.5 rem;
+            }
+            .fab {
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+            div.p-2 {
+                align-self: center;
+                h4 {
+                    font-size: 1rem;
+                }
+            }
+
+            /*Estilo Marcas*/
+            .carousel {
+                margin: auto;
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    height: 70vh;
+                }
+            }
+
+            /*Estilo Nuevos*/
+            .card {
+                margin: 2rem;
+            }
+            .card-img-top {
+                width: 100%;
+            }
+            .btn-primary {
+                &:hover {
+                    background-color: rgb(247, 151, 218);
+                    color: blue;
+                }
+            }
+            a.btn {
+                background-color: rgb(245, 173, 223);
+                font-size: 1rem;
+                border-radius: rgb(83, 25, 61);
+                color: brown;
+            }
+
+            /*Estilo preguntas*/
+            .contenedor__preguntas {
+                margin: 20px;
+                padding: 20px;
+            }
+            .preguntas {
+                margin: 20px;
+                display: flex;
+                line-height: 1.5;
+                flex-direction: column;
+            }
+            .titulo {
+                color: rgb(54, 18, 54);
+                font-size: 1.5 rem;
+                ol {
+                    li {
+                        text-align: justify;
+                        list-style: none;
+                    }
+                }
+            }
+
+            /*Estilo Formulario*/
+            .formulario {
+                display: flex;
+                margin: 1.5rem;
+                padding: 1.5rem;
+                border-color: rgb(111, 15, 201);
+                justify-content: center;
+                text-align: center;
+            form {
+                position: relative;
+                width: 740px;
+                height: 498px;
+                margin: 0 auto;
+            }
+        }
             
            
 
