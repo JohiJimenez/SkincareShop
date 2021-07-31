@@ -117,12 +117,13 @@ main{
             }
 
             /*Estilo Nuevos*/
-            .card {
+            .contenedorNuevos{
+                 .card {
                 margin: 2rem;
+            
             }
-            .card-img-top {
-                width: 100%;
             }
+           
             .btn-primary {
                 &:hover {
                     background-color: rgb(247, 151, 218);

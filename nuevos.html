@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Online de Skincare</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;1,400;1,500;1,600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0fe356edd5.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet"> 
+  <!-- Meta Etiquetas-->
+  <meta name="description" content="SkincareShop es una Tienda Online de productos de Skincare importados. Tenemos las marcas CeraVe, The Ordinary y Banilaco. Compra Online y recibe en tu domicilio">
+  <!--Keywords-->
+  <meta name="keywords" content="Skincare, Serum, Agua Micelar, Limpiador, Acido Ascorbico, Niacinamida">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="marcas/favicon.ico" type="image/x-icon">
+  <!--Open Graph-->
+  <meta property="og:title" content="Tienda Online de Productos Importados de Skincare">
+  <meta property="og:description" content="SkincareShop es una Tienda Online de productos de Skincare importados. Tenemos las marcas CeraVe, The Ordinary y Banilaco. Compra Online y recibe en tu domicilio">
+  <script src="https://kit.fontawesome.com/0fe356edd5.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+ <!--Titulo de mi Proyecto para mi Posicionamiento--> 
+  <title>Tienda Online de Productos Importados de Skincare</title>
 </head>
 <body>
   <!-- Encabezado de mi Sitio Web -->
     <header class="encabezado">
-        <!--Titulo-->
-        <h1 class="encabezado__titulo"> Skincare Shop</h1>
-        <!--Menu de Navegacion-->
-          <nav class="encabezado__menu">
-            <ul>
-              <li><a class="encabezado__menu--secc" href="index.html">   INICIO   </a> </li>
-              <li><a class="encabezado__menu--secc" href="marcas.html">   MARCAS   </a></li>   
-              <li><a class="encabezado__menu--secc" href="nuevos.html">   PRODUCTOS NUEVOS   </a>  </li>
-              <li><a class="encabezado__menu--secc" href="preguntas.html">   PREGUNTAS FRECUENTES   </a></li>
-              <li><a class="encabezado__menu--secc" href="contacto.html">   CONTACTO   </a> </li>		
-            </ul>		
-          </nav>   
+       <!--Titulo-->
+      <h1 class="encabezado__titulo"> Skincare Shop</h1>
+      <!--Menu de Navegacion-->
+      <nav class="encabezado__menu">	
+              <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="marcas.html">Marcas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nuevos.html">Nuevos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="preguntas.html">Preguntas</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>	
+      </nav>   
     </header>
   <!-- Fin de mi Encabezado-->
 	<!--Cuerpo Principal-->
     <main class="contenedorNuevos">
-      <div class="d-flex flex-row justify-content-center">
-          <div class="card" style="width: 18rem;">
-              <img src="productos/buffet.jpg" class="card-img-top" alt="Suero de Peptidos">
-              <div class="card-body">
-                <h5 class="card-title">BUFFET</h5>
-                <p class="card-text">Un ligero suero que ofrece multitud de beneficios para tu piel. Este tratamiento mejora los signos de envejecimiento, reduce las finas líneas y arrugas, desvanece las manchas oscuras, hidrata, 
-                  da brillo y favorece la firmeza y suavidad de la piel del rostro. Esta fórmula combina una amplia gama de tecnologías estudiadas para atacar múltiples signos 
-                  de envejecimiento a la vez. </p>
-                <a href="#" class="btn btn-primary">Ir a Comprar</a>
-              </div>
+       <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="productos/buffet.jpg" class="img-fluid rounded-start" alt="Suero de Peptidos">
           </div>
-          <div class="card" style="width: 18rem;">
-              <img src="productos/cafeina.jpg" class="card-img-top" alt="Suero de Cafeina">
-              <div class="card-body">
-                <h5 class="card-title">CAFEINA</h5>
-                <p class="card-text">Este sérum ligero contiene una gran concentración (5 %) de cafe, así como una forma purificada de glucósido de galato de epigalocatequina (EGCG) 
-                  proveniente de hojas de té verde.
-                  Aplicar masajeando una pequeña cantidad sobre el contorno del ojo, por la mañana y por la noche.Utilizar únicamente sobre la piel intacta y siguiendo siempre las instrucciones 
-                  de uso. Se aconseja hacer una prueba sobre una pequeña superficie de piel antes de su uso.</p>
-                <a href="#" class="btn btn-primary">Ir a Comprar</a>
-              </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">BUFFET</h5>
+              <p class="card-text">Un ligero suero que ofrece multitud de beneficios para tu piel. Este tratamiento mejora los signos de envejecimiento, reduce las finas líneas y arrugas, desvanece las manchas oscuras, hidrata, 
+                da brillo y favorece la firmeza y suavidad de la piel del rostro. Esta fórmula combina una amplia gama de tecnologías estudiadas para atacar múltiples signos 
+                de envejecimiento a la vez.
+              </p>
+                <p class="card-text"> </p>
+              <a href="#" class="btn btn-primary">Ir a Comprar</a>
+            </div>
           </div>
-          <div class="card" style="width: 18rem;">
-              <img src="productos/niacinamida.jpg" class="card-img-top" alt="Suero de Niacinamida">
-              <div class="card-body">
-                <h5 class="card-title">NIACINAMIDA</h5>
-                <p class="card-text">El polvo de niacinamida al 100% ofrece la forma más directa de exposición tópica a la niacinamida para minimizar el brillo visible,
-                   poros ensanchados y textura irregular de la piel. No se recomienda combinar niacinamida con vitamina c tópica (Ácido L-ascórbico, Ethylated L-Ascorbic y derivados de la 
-                  vitamina C) en la misma rutina. Si usas vitamina C se recomiendo alternar con el uso de esta fórmula (idealmente vitamina C en la noche y esta fórmula en la mañana.
-                  No se recomienda disolver el polvo de niacinamida en ácidos directos.</p>
-                <a href="#" class="btn btn-primary">Ir a Comprar</a>
-              </div>
-          </div>        
-      </div>                  
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="productos/niacinamida.jpg" class="img-fluid rounded-start" alt="Suero de Niacinamida">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">NIACINAMIDA</h5>
+              <p class="card-text">El polvo de niacinamida al 100% ofrece la forma más directa de exposición tópica a la niacinamida para minimizar el brillo visible,
+                poros ensanchados y textura irregular de la piel. No se recomienda combinar niacinamida con vitamina c tópica (Ácido L-ascórbico, Ethylated L-Ascorbic y derivados de la 
+               vitamina C) en la misma rutina. Si usas vitamina C se recomiendo alternar con el uso de esta fórmula (idealmente vitamina C en la noche y esta fórmula en la mañana.
+               No se recomienda disolver el polvo de niacinamida en ácidos directos.</p>
+               <a href="#" class="btn btn-primary">Ir a Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="productos/cafeina.jpg" class="img-fluid rounded-start" alt="Suero de Cafeina">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">CAFEINA</h5>
+              <p class="card-text">Este sérum ligero contiene una gran concentración (5 %) de cafe, así como una forma purificada de glucósido de galato de epigalocatequina (EGCG) 
+                proveniente de hojas de té verde.
+                Aplicar masajeando una pequeña cantidad sobre el contorno del ojo, por la mañana y por la noche.Utilizar únicamente sobre la piel intacta y siguiendo siempre las instrucciones 
+                de uso. Se aconseja hacer una prueba sobre una pequeña superficie de piel antes de su uso.
+              </p>
+              <a href="#" class="btn btn-primary">Ir a Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>              
     </main>
 	<!--Fin Cuerpo Pricipal-->
 	<!--Inicio Pie de Pagina-->
