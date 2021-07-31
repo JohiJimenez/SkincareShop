@@ -40,6 +40,7 @@ main {
 .container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .container .producto img {
   margin: 10px;
@@ -90,7 +91,7 @@ div.p-2 h4 {
 .carousel img {
   object-fit: cover;
   object-position: center;
-  height: 70vh;
+  height: 60vh;
 }
 
 /*Estilo Nuevos*/
@@ -125,7 +126,7 @@ a.btn {
 
 .titulo {
   color: #361236;
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
 }
 .titulo ol li {
   text-align: justify;
@@ -135,11 +136,11 @@ a.btn {
 /*Estilo Formulario*/
 .formulario {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 1.5rem;
   padding: 1.5rem;
   border-color: #6f0fc9;
-  justify-content: center;
-  text-align: center;
 }
 .formulario form {
   position: relative;
