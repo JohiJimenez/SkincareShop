@@ -6,7 +6,6 @@
  //Mixins//
  @mixin box{
     display: flex;
-    align-items: center;
     justify-content: center;
  }
 
@@ -29,19 +28,22 @@
 h1{
     text-align: center;
     font-size: $size*4;
+    font-size: italic;
   }
   
   /*Estilos del Menu de Navegacion*/
 
   .encabezado__menu{
+      background-color: #CE97B0 ;
       ul{
         li {
           a {
+              color: $color;
+              font-size: $size;             
             &:hover {
-                font-size: $size;
-                background-color: rgb(245, 173, 223);
-                border-radius: $size/2;
-                color: $color;
+                background-color: rgb(248, 191, 231);
+                color: #6F4C5B;
+                border-radius: $size+0.2;
             }
          }          
         }
@@ -60,38 +62,59 @@ main{
 
 /*Estilo de Productos*/
 	
-	.container{
-        @include box;
-            .producto img{
-                margin: 10px;
-                border-color: blueviolet;
-                width: $size*15;
-                height: $size*15;
-                &:hover{
-                    transform: scale(1.1); 
+	.container{     
+        .row {
+            @include box;
+            padding: $size;
+                .producto__img{
+                    width: auto;
+                    margin: 10px;
+                    padding: $size;
+                    border-color: blueviolet;
+                    width: $size*15;
+                    height: $size*15;
+                    &:hover{
+                        transform: scale(1.1); 
+                    }
                 }
-             }
-             .producto__icon{
-                display: flex;
-                color: rgb(102, 48, 88);
-                size: 0.1 rem;
+                .producto__icon{
+                    display: flex;
+                    color: rgb(102, 48, 88);     
+                
+                }
+                h3.producto__titulo{
+                    text-align: center;
+                    font-size: $size;
+                    font-weight: bold;
+                }
+                span.producto__precio {
+                    color: #FF4E00;
+                } 
             }
-            h3.producto__titulo{
-                text-align: center;
-                font-size: $size;
-                font-style: italic;
-            }
-            span.producto__precio {
-                color: #FF4E00;
-                text-align: auto;
-            }
-     }
-                         
+          }            
         	/*Estilos Pie de Pagina*/
             .footer {
-                background-color: #dab7f0;
-                margin: 0.5 rem;
+                background-color: #CE97B0;
+                justify-content: space-evenly;
+                align-items: center;
+                color: $color;
+                margin: 0.5rem;
                 padding: 0.5 rem;
+                .row{
+                    margin: 10px;
+                }
+              
+                .footer__titulo{
+                    size: 1.5rem;
+                    padding-top: 3rem;
+                    margin-left: 0.3rem;
+                }
+            .footer__iconos{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+             }
             }
             .fab {
                 &:hover {
@@ -104,40 +127,67 @@ main{
                     font-size: $size;
                 }
             }
+           
 
             /*Estilo Marcas*/
-            .carousel {
-                margin: auto;
-                img {
+        
+            .slide{
+                margin-top: $size;
+                width: inherit;
+                height: inherit;
+            
+                img{
+                    width: 100%;
                     object-fit: cover;
-                    object-position: center;
-                    height: 60vh;
-                }
             }
+        }
+
 
             /*Estilo Nuevos*/
-            .contenedorNuevos{
+            .contenedorNuevos {
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content: center;   
+                padding: $size;
+                margin: $size;
                  .card {
-                margin: $size*2;
-            
-            }
-            }
-           
-            .btn-primary {
-                &:hover {
-                    background-color: rgb(247, 151, 218);
-                    color: blue;
+                   margin: $size;
+                   .card-title{
+                    text-align: center;
+                 }
+                  .card-text{
+                    margin: 1.2rem;
+                    padding: 1rem;
+                    text-align: justify;
                 }
-            }
-            a.btn {
-                background-color: rgb(245, 173, 223);
-                font-size: $size;
-                border-radius: rgb(83, 25, 61);
-                color: brown;
-            }
+                .btn-primary{
+                    display: block;
+                    border: 2px solid #FF4E00;
+                    padding: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    width: 150px;
+                    margin: 20px auto;
+                    background-color: rgb(245, 173, 223);
+                    font-size: $size;
+                    border-radius: rgb(83, 25, 61);
+                    color: brown;
+                    border: transparent;
+                    &:hover {
+                        background-color: rgb(247, 151, 218);
+                        color: blue;
+                    }
+                }
+                 }
+               }
+
+           
 
             /*Estilo preguntas*/
-            .contenedor__preguntas {
+            #contenedor__preguntas {
+                display: flex;
+                justify-content: center;
                 margin: 20px;
                 padding: 20px;
             }

@@ -16,14 +16,21 @@ body {
 h1 {
   text-align: center;
   font-size: 4rem;
+  font-size: italic;
 }
 
 /*Estilos del Menu de Navegacion*/
-.encabezado__menu ul li a:hover {
-  font-size: 1rem;
-  background-color: #f5addf;
-  border-radius: 0.5rem;
+.encabezado__menu {
+  background-color: #CE97B0;
+}
+.encabezado__menu ul li a {
   color: #292929;
+  font-size: 1rem;
+}
+.encabezado__menu ul li a:hover {
+  background-color: #f8bfe7;
+  color: #6F4C5B;
+  border-radius: 1.2rem;
 }
 
 i {
@@ -37,40 +44,57 @@ main {
 }
 
 /*Estilo de Productos*/
-.container {
+.container .row {
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
-.container .producto img {
+.container .row .producto__img {
+  width: auto;
   margin: 10px;
+  padding: 1rem;
   border-color: blueviolet;
   width: 15rem;
   height: 15rem;
 }
-.container .producto img:hover {
+.container .row .producto__img:hover {
   transform: scale(1.1);
 }
-.container .producto__icon {
+.container .row .producto__icon {
   display: flex;
   color: #663058;
-  size: 0.1 rem;
 }
-.container h3.producto__titulo {
+.container .row h3.producto__titulo {
   text-align: center;
   font-size: 1rem;
-  font-style: italic;
+  font-weight: bold;
 }
-.container span.producto__precio {
+.container .row span.producto__precio {
   color: #FF4E00;
-  text-align: auto;
 }
 
 /*Estilos Pie de Pagina*/
 .footer {
-  background-color: #dab7f0;
-  margin: 0.5 rem;
+  background-color: #CE97B0;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #292929;
+  margin: 0.5rem;
   padding: 0.5 rem;
+}
+.footer .row {
+  margin: 10px;
+}
+.footer .footer__titulo {
+  size: 1.5rem;
+  padding-top: 3rem;
+  margin-left: 0.3rem;
+}
+.footer .footer__iconos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .fab:hover {
@@ -85,34 +109,59 @@ div.p-2 h4 {
 }
 
 /*Estilo Marcas*/
-.carousel {
-  margin: auto;
+.slide {
+  margin-top: 1rem;
+  width: inherit;
+  height: inherit;
 }
-.carousel img {
+.slide img {
+  width: 100%;
   object-fit: cover;
-  object-position: center;
-  height: 60vh;
 }
 
 /*Estilo Nuevos*/
+.contenedorNuevos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
 .contenedorNuevos .card {
-  margin: 2rem;
+  margin: 1rem;
 }
-
-.btn-primary:hover {
-  background-color: #f797da;
-  color: blue;
+.contenedorNuevos .card .card-title {
+  text-align: center;
 }
-
-a.btn {
+.contenedorNuevos .card .card-text {
+  margin: 1.2rem;
+  padding: 1rem;
+  text-align: justify;
+}
+.contenedorNuevos .card .btn-primary {
+  display: block;
+  border: 2px solid #FF4E00;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  margin: 20px auto;
   background-color: #f5addf;
   font-size: 1rem;
   border-radius: #53193d;
   color: brown;
+  border: transparent;
+}
+.contenedorNuevos .card .btn-primary:hover {
+  background-color: #f797da;
+  color: blue;
 }
 
 /*Estilo preguntas*/
-.contenedor__preguntas {
+#contenedor__preguntas {
+  display: flex;
+  justify-content: center;
   margin: 20px;
   padding: 20px;
 }
@@ -136,7 +185,6 @@ a.btn {
 /*Estilo Formulario*/
 .formulario {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 1.5rem;
   padding: 1.5rem;
